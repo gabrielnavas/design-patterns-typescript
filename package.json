@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gabrielnavas/design-patterns-typescript/issues"
   },
-  "homepage": "https://github.com/gabrielnavas/design-patterns-typescript#readme"
+  "homepage": "https://github.com/gabrielnavas/design-patterns-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
 }
