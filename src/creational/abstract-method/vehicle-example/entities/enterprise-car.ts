@@ -1,6 +1,6 @@
 import { Vehicle } from '../interfaces/vehicle'
 
-export class InterpriseCar implements Vehicle {
+export class EnterpriseCar implements Vehicle {
   constructor (
     private readonly name: string,
     private readonly costumerName: string
