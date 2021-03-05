@@ -20,8 +20,6 @@ export class ProductComposed extends ProductComponent {
 
   remove (product: ProductComponent): void {
     const productIndex = this.children.indexOf(product)
-    console.log(productIndex)
-
     if (productIndex >= 0) {
       this.children.splice(productIndex, 1)
     }

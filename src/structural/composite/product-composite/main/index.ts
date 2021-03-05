@@ -1,5 +1,5 @@
-import { ProductComposed } from './entities/product-composed'
-import { ProductLeaf } from './entities/product-leaf'
+import { ProductComposed } from '../entities/product-composed'
+import { ProductLeaf } from '../entities/product-leaf'
 
 const main = () => {
   const pen = new ProductLeaf('1', 'Pen', 1)
