@@ -2,10 +2,9 @@ import { ProductComponent } from '../interfaces/product-component'
 
 export class ProductComposed extends ProductComponent {
   constructor (
-    public id: string,
     private children: ProductComponent[] = []
   ) {
-    super(id)
+    super()
   }
 
   getPrice (): number {

@@ -2,15 +2,15 @@ import { ProductComposed } from '../entities/product-composed'
 import { ProductLeaf } from '../entities/product-leaf'
 
 const main = () => {
-  const pen = new ProductLeaf('1', 'Pen', 1)
-  const smarthphone = new ProductLeaf('2', 'Smarthphone', 1_000)
-  const shirt = new ProductLeaf('3', 'Shirt', 40)
-  const productBox = new ProductComposed('4')
+  const pen = new ProductLeaf('Pen', 1)
+  const smarthphone = new ProductLeaf('Smarthphone', 1_000)
+  const shirt = new ProductLeaf('Shirt', 40)
+  const productBox = new ProductComposed()
 
   productBox.add(pen, smarthphone, shirt)
   productBox.remove(pen)
 
-  const otherProductBox = new ProductComposed('6')
+  const otherProductBox = new ProductComposed()
   otherProductBox.add(productBox)
 
   const sum = otherProductBox.getPrice()
