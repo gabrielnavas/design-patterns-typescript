@@ -10,7 +10,11 @@ export class TouchRemoteControl extends RemoteControl {
     this.device.togglePower()
   }
 
-  getAreaTouchOnClick (height: number, width: number) {
+  isPowerOn () {
+    return this.device.getPowerLevel() > 0
+  }
+
+  handleAreaTouch (height: number, width: number) {
     if (height === 20 && width === 20) {
       this.device.powerOn()
     } else if (height === 20 && width === 40) {
